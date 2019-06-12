@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <title>IntroJS Grupo XB</title>
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/problemas.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rambla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script>
+        function calcula_tiempo()
+        {
+           var distancia=227.9e6;
+           var velocidad= 3e5;
+           var tiempo= distancia/velocidad;
+           var d=document.getElementById("resultadoA");
+           d.innerHTML=tiempo+' seg';
+        }
+    </script>
+</head>
+<body>
+   <section class="wrapper">
+    <header>
+      <h1 class="logo"><a href="index.html">IntroJS</a></h1>
+      <nav>
+      <ul>
+        <li><a href="index.html" class="current">Inicio</a></li>
+        <li><a href=basicoJS.html>Básica</a></li>
+      </ul>
+      </nav>
+    </header>
+<section id="contenedor">
+<section  class="problema">
+  <h2>Problema: Suponiendo que la Tierra y Marte no se movieran, ¿cuanto tiempo tardaria en llegar una señal que viaja a la velociad de la luz?</h2>
+ 
+</section>
+<section class="formulas">
+<h2>Fórmulas</h2>
+    t=d/c<br>
+    
+</section>
+<section class="datos">
+<h2>Datos de entrada:</h2>
+   dtm= distancia tierra-marte= 227.9 millones km. <br>
+   c= velocidad de la luz= 300000km/s. 
+</section>
+<section class="calculos">
+<h2>Solución</h2>
+   <p>a)Sustituimos los datos en la formula<br>
+    tiempo=227.9e6/3e5 <br>
+    
+    <button onclick="calcula_tiempo();">Presiona para calcular</button>
+</section>
+<section class="resultado">
+<h2>Resultado:</h2>
+<div id="resultadoA"></div>
+</section>
+</section>
+    <footer class="pie">
+     Creative Commons versión 3.0 SciSoft 2019
+    </footer>
+   </section>
+</body>
+</html>
